@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Emisora</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+
+  <style>
+  h1,h2,h3,h4{
+    color: rgb(5, 7, 54);
+  }
+  body{
+    font-family: 'Signika', sans-serif;
+  }
+  #audioplayer{
+  width: 54px;
+  height: 54px;
+  vertical-align: bottom;
+ }
+
+#pButton{
+    height:54px; 
+    width: 54px;
+    border: none;
+        margin-top: 5px;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    float:left;
+    outline:none;
+}
+
+.play{background: url('https://image.flaticon.com/icons/svg/148/148744.svg') ;}
+.pause{background: url('https://image.flaticon.com/icons/svg/660/660559.svg') ;}
+
+#timeline{
+  display: none;
+  width: 400px;
+  height: 20px;
+  margin-top: 20px;
+  float: left;
+  border-radius: 15px;
+  
+  
+}
+#playhead{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: 1px;
+
+
+}
+
+
+  </style>
+</head>
+<body>
+  <nav  style="background-color: rgb(5, 7, 54);" role="navigation">
+    <div class="nav-wrapper container"  style="background-color: rgb(5, 7, 54);"> 
+
+
+      <ul class="right hide-on-med-and-down" class="white-text" >
+        <li><a href="#" class="white-text" style="font-size: 20px;">Redes Sociales</a></li>
+         <li><a href="#" class="white-text" style="font-size: 20px;">Play List</a></li>
+          <li><a href="#" class="white-text" style="font-size: 20px;">Programas</a></li>
+           <li>
+
+            <audio id="music" preload="true">
+  <source src="http://shout.worldkast.com:8252/;">
+      <source src="http://shout.worldkast.com:8252/;">
+  </audio>
+<div id="audioplayer">
+  <button id="pButton" class="play"></button>
+  <div id="timeline">    
+        <div id="playhead"></div>
+  </div>
+</div>
+
+           </li>
+            <li><a href="#" class="white-text" style="font-size: 20px;">Donaciones</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="carousel carousel-slider" style="height: 400px;">
+    <a class="carousel-item" href="#one!"><img src="PORTADA DE FACEBOOK-03.jpg"  style="height: 400px;" ></a>
+    <a class="carousel-item" href="#two!"><img src="PORTADA DE FACEBOOK-03.jpg"  style="height: 400px;"></a>
+    <a class="carousel-item" href="#three!"><img src="PORTADA DE FACEBOOK-03.jpg"  style="height: 400px;"></a>
+    <a class="carousel-item" href="#four!"><img src="PORTADA DE FACEBOOK-03.jpg"  style="height: 400px;"></a>
+  </div>
+  <div class="row" style="background-color: rgb(5, 7, 54); height: 64px;">
+  
+
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+     <center> <h2>Redes Sociales</h2></center>
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+       <center>   <img src="https://image.flaticon.com/icons/svg/145/145802.svg" style="position: relative; height: 64px;width: 64px; top: 0;"></center>
+         <iframe style="border-radius: 15px; border-style: solid; border-width: 10px; border-color: rgb(5, 7, 54); " src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFILADELFIANEIVA%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <div class="col s12 m4">
+          <center>   <img src="https://image.flaticon.com/icons/svg/185/185985.svg" style="position: relative; height: 64px;width: 64px; top: 0;"></center>
+          <iframe style="border-radius: 15px; border-style: solid; border-width: 10px; border-color: rgb(5, 7, 54); " src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFILADELFIANEIVA%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <div class="col s12 m4">
+          <center>   <img src="https://image.flaticon.com/icons/svg/185/185961.svg" style="position: relative; height: 64px;width: 64px; top: 0;"></center>
+       <iframe style="border-radius: 15px; border-style: solid; border-width: 10px; border-color: rgb(5, 7, 54); " src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFILADELFIANEIVA%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <div class="fb-comments" data-href="https://www.facebook.com/FILADELFIANEIVA/" data-width="100%" data-numposts="5"></div>
+        <div id="fb-root"></div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+       
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="banner.png" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <center><h2>Play List</h2></center>
+          <br>
+        <div class="row">
+          
+          <div class="col s12 m4 l4">
+            <iframe style="border-radius: 15px; border-style: solid; border-width: 10px; border-color: rgb(5, 7, 54); " width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/329276170&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+          </div>
+
+           <div class="col s12 m4 l4">
+            <iframe style="border-radius: 15px; border-style: solid; border-width: 10px; border-color: rgb(5, 7, 54); " width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/329276170&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+          </div>
+
+
+ <div class="col s12 m4 l4">
+            <iframe style="border-radius: 15px; border-style: solid; border-width: 10px; border-color: rgb(5, 7, 54); " width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/329276170&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+          </div>
+
+
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+         
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="banner.png" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <center><h2>Programas</h2></center>
+         <div class="row">
+           <div class="col s12 m12 l12" style="border-radius: 15px; border-style: solid; border-width: 10px; border-color: rgb(5, 7, 54); ">
+             
+      <table >
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+          </tr>
+        </tbody>
+      </table>
+           </div>
+         </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="banner.png" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <center><h2>Donaciones</h2></center>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+
+          <div class="row">
+            
+            <div class="col m4 l4 s12">
+              <button class="btn">$50.000</button>
+            </div>
+
+             <div class="col m4 l4 s12">
+              <button class="btn">$100.000</button>
+            </div>
+
+             <div class="col m4 l4 s12">
+              <button class="btn">$200.000</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="banner.png" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer" style="background-color: rgb(5, 7, 54);">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Señal de Vida</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Menu</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Redes sociales</a></li>
+            <li><a class="white-text" href="#!">Play list</a></li>
+            <li><a class="white-text" href="#!">Programas</a></li>
+            <li><a class="white-text" href="#!">Donaciones</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contacto</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Email: señaldevida@gmail.com</a></li>
+            <li><a class="white-text" href="#!">Whatsapp : +57 32645789</a></li>
+            <li><a class="white-text" href="#!">Telefono : 8753234</a></li>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+     var instance = M.Carousel.init({
+    fullWidth: true,
+    indicators: true,
+  });
+
+ 
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+     indicators: true
+  });
+ 
+ setInterval(function(){
+$('.carousel.carousel-slider').carousel('next');
+ }, 50000);
+
+
+var music = document.getElementById('music'); // id for audio element
+var duration = music.duration; // Duration of audio clip, calculated here for embedding purposes
+var pButton = document.getElementById('pButton'); // play button
+var playhead = document.getElementById('playhead'); // playhead
+var timeline = document.getElementById('timeline'); // timeline
+
+// timeline width adjusted for playhead
+var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+
+// play button event listenter
+pButton.addEventListener("click", play);
+
+// timeupdate event listener
+music.addEventListener("timeupdate", timeUpdate, false);
+
+// makes timeline clickable
+timeline.addEventListener("click", function(event) {
+    moveplayhead(event);
+    music.currentTime = duration * clickPercent(event);
+}, false);
+
+// returns click as decimal (.77) of the total timelineWidth
+function clickPercent(event) {
+    return (event.clientX - getPosition(timeline)) / timelineWidth;
+}
+
+// makes playhead draggable
+playhead.addEventListener('mousedown', mouseDown, false);
+window.addEventListener('mouseup', mouseUp, false);
+
+// Boolean value so that audio position is updated only when the playhead is released
+var onplayhead = false;
+
+// mouseDown EventListener
+function mouseDown() {
+    onplayhead = true;
+    window.addEventListener('mousemove', moveplayhead, true);
+    music.removeEventListener('timeupdate', timeUpdate, false);
+}
+
+// mouseUp EventListener
+// getting input from all mouse clicks
+function mouseUp(event) {
+    if (onplayhead == true) {
+        moveplayhead(event);
+        window.removeEventListener('mousemove', moveplayhead, true);
+        // change current time
+        music.currentTime = duration * clickPercent(event);
+        music.addEventListener('timeupdate', timeUpdate, false);
+    }
+    onplayhead = false;
+}
+// mousemove EventListener
+// Moves playhead as user drags
+function moveplayhead(event) {
+    var newMargLeft = event.clientX - getPosition(timeline);
+
+    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+        playhead.style.marginLeft = newMargLeft + "px";
+    }
+    if (newMargLeft < 0) {
+        playhead.style.marginLeft = "0px";
+    }
+    if (newMargLeft > timelineWidth) {
+        playhead.style.marginLeft = timelineWidth + "px";
+    }
+}
+
+// timeUpdate
+// Synchronizes playhead position with current point in audio
+function timeUpdate() {
+    var playPercent = timelineWidth * (music.currentTime / duration);
+    playhead.style.marginLeft = playPercent + "px";
+    if (music.currentTime == duration) {
+        pButton.className = "";
+        pButton.className = "play";
+    }
+}
+
+//Play and Pause
+function play() {
+    // start music
+    if (music.paused) {
+        music.play();
+        // remove play, add pause
+        pButton.className = "";
+        pButton.className = "pause";
+    } else { // pause music
+        music.pause();
+        // remove pause, add play
+        pButton.className = "";
+        pButton.className = "play";
+    }
+}
+
+// Gets audio file duration
+music.addEventListener("canplaythrough", function() {
+    duration = music.duration;
+}, false);
+
+// getPosition
+// Returns elements left position relative to top-left of viewport
+function getPosition(el) {
+    return el.getBoundingClientRect().left;
+}
+
+      
+  </script>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  </body>
+</html>
